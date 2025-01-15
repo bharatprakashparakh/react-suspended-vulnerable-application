@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        nodejs 'NodeJS 14.x'  // Ensure Node.js v14 is used (make sure this version is installed in Jenkins)
+        nodejs 'NodeJS 14.0.0'  // Ensure Node.js v14 is used (make sure this version is installed in Jenkins)
     }
 
     // environment {
@@ -33,7 +33,6 @@ pipeline {
                 sh 'npm run build'  // Run the build script as defined in your package.json
             }
         }
-
 
     }
 
